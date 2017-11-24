@@ -1,0 +1,1 @@
+gcc -o ascalculator main.c
