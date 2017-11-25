@@ -40,6 +40,7 @@ void footer(){
     printf("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n\n");
 }
 
-void outputData(double ascalc){
+void outputData(double ascalc, int estadio){
     printf("\nArea de Aco calculada: %3.2f cm2.\n", ascalc);
+    printf("\nEstadio: %d.\n", estadio);
 }

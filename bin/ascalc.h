@@ -41,3 +41,20 @@ double as(double bw, double h, double fck, double Md){
 
     return ascalc;
 }
+
+int ln(double bw, double h, double fck, double Md){
+
+    double xd, d, fcd;
+    int est;
+
+    fcd = fck/14;
+    d = h - 3.0 - 0.63 - 0.4;
+
+    xd = 1.25*(1 - sqrt(1 - ((Md*100)/(0.425*bw*pow(d,2)*fcd))));
+
+    est = (xd < 0.269) ? 2 :
+            ((xd > 0.269) && (xd < 0.628)) ? 3 : 4;
+
+    return est;
+}
+

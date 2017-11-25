@@ -34,12 +34,14 @@ INSTRUÇÕES ADICIONAIS
 int main(){
 
     double areaAco;
+    char linhaNeutra;
 
     header();
 
     areaAco = as(14.0,35.0,25.0,18.75);
+    linhaNeutra = ln(14.0,35.0,25.0,18.75);
 
-    outputData(areaAco);
+    outputData(areaAco,linhaNeutra);
 
     footer();
     getch();
