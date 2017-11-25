@@ -13,7 +13,7 @@ Matrícula: UC17620317
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-INFORMAÇÕE RELEVANTES DO CÓDIGO:
+INFORMAÇÕES RELEVANTES DO CÓDIGO:
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -21,39 +21,26 @@ INFORMAÇÕE RELEVANTES DO CÓDIGO:
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 INSTRUÇÕES ADICIONAIS
 
-    > Compilar no Terminal: gcc -o ASCalc main.c
-    > Executar pelo Terminal: ASCalc.exe
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 */
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "ascalc.h"
-#include "output.h"
-#include "misc.h"
 
-int main(){
+bool sair(){
 
-    double areaAco;
-    int linhaNeutra;
-    bool finalizar = true;
+    char sair;
 
-    while(finalizar){
-        header();
+    printf("\n\nDeseja sair? (S/N) ");
+    sair = getchar();
+    sair = toupper(sair);
 
-        areaAco = as(14.0,35.0,25.0,18.75);
-        linhaNeutra = ln(14.0,35.0,25.0,18.75);
-
-        outputData(areaAco,linhaNeutra);
-
-        footer();
-
-        finalizar = sair();
+    if (sair == 'S'){
+        return true;
+    }else{
+        return false;
+        system("clear");
     };
 
-        
-    getch();
-    
-    return 0;
 }
