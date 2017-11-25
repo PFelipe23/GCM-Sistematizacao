@@ -4,7 +4,7 @@
                     UNIVERSIDADE CATÓLICA DE BRASÍLIA
 
 Disciplina: Gerenciamento de Configuração e Mudanças
-Professor: 
+Professor: Me. Edgard Devanir Amoroso
 
 Aluno: Pedro Felipe Dias de Oliveira
 Curso: Engenharia de Software
