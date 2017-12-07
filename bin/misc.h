@@ -34,11 +34,10 @@ bool sair(){
 
     printf("\n\nDeseja sair? (S/N) ");
     sair = getchar();
-    sair = toupper(sair);
 
-    if (sair == 'S'){
+    if (sair == 'S' || sair == 's'){
         return true;
-    }else{
+    } else {
         return false;
         system("clear");
     };

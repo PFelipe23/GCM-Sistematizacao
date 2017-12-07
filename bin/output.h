@@ -40,7 +40,16 @@ void footer(){
     printf("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n\n");
 }
 
-void outputData(double ascalc, int estadio){
+void outputData(double ascalc, int estadio, double volume, double forma){
     printf("\nArea de Aco calculada: %3.2f cm2.\n", ascalc);
     printf("\nEstadio: %d.\n", estadio);
+    printf("\nVolume de Concreto: %3.2f m3.\n", volume);
+    printf("\nArea de forma: %3.2f m2.\n", forma);
+}
+
+void finalFooter(){
+    printf("\n\n");
+    printf("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
+    printf("               PROGRAMA FINALIZADO COM SUCESSO\n");
+    printf("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n\n");
 }

@@ -58,3 +58,20 @@ int ln(double bw, double h, double fck, double Md){
     return est;
 }
 
+double volume(double bw, double h, double L){
+
+    double vol;
+
+    vol = bw*h*L/10000;
+
+    return vol;
+}
+
+double forma(double bw, double h, double L){
+
+    double form;
+
+    form = ((2*bw*h) + (2*h+bw)*L*100)/10000;
+
+    return form;
+}

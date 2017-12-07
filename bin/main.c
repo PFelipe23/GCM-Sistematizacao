@@ -13,7 +13,7 @@ Matrícula: UC17620317
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-INFORMAÇÕE RELEVANTES DO CÓDIGO:
+INFORMAÇÕES RELEVANTES DO CÓDIGO:
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -29,6 +29,7 @@ INSTRUÇÕES ADICIONAIS
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <time.h>
 #include "ascalc.h"
 #include "output.h"
 #include "misc.h"
@@ -36,6 +37,8 @@ INSTRUÇÕES ADICIONAIS
 int main(){
 
     double areaAco;
+    double volumeViga;
+    double formaViga;
     int linhaNeutra;
     bool finalizar = true;
 
@@ -44,16 +47,17 @@ int main(){
 
         areaAco = as(14.0,35.0,25.0,18.75);
         linhaNeutra = ln(14.0,35.0,25.0,18.75);
+        volumeViga = volume(14.0,35.0,4.5);
+        formaViga = forma(14.0,35.0,4.5);
 
-        outputData(areaAco,linhaNeutra);
+        outputData(areaAco,linhaNeutra,volumeViga,formaViga);
 
         footer();
 
         finalizar = sair();
     };
 
-        
-    getch();
-    
+    finalFooter();
+    sleep(5);
     return 0;
 }
